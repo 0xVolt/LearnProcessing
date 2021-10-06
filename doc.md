@@ -29,3 +29,6 @@
 
 - To run the file, open up the terminal in that directory and run, 
 `java -jar processing-py.jar <file_name.py>`
+
+### Note:
+When committing and pushing code to GitHub, be sure to not include the `processing-py.jar` file in the staging area.
