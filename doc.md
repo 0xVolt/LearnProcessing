@@ -2,6 +2,9 @@
 - Open up the command palette and select `Create p5.js Project`.
 - Write your code in the `sketch.js` file generated.
 
+<br/>
+<br/>
+
 # Steps to running Processing projects in VSCode
 
 - First create a directory with `<dir_name>` as its name and `cd` into it.
@@ -9,9 +12,6 @@
 - Then create a `<dir_name.pde>` file in that directory which will be your main processing project.
 
 ###### Note: The name of the file needs to be the same as the parent directory
-
-<br/>
-<br/>
 
 - Next open up the command palette and run, `Processing: Create Task File`.
     - This creates a `.vscode` config file that stores relevant information about the processing project.
