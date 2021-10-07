@@ -10,6 +10,9 @@
 
 ###### Note: The name of the file needs to be the same as the parent directory
 
+<br/>
+<br/>
+
 - Next open up the command palette and run, `Processing: Create Task File`.
     - This creates a `.vscode` config file that stores relevant information about the processing project.
     - *This step is needed only once every project.*
