@@ -1,9 +1,6 @@
 # learnProcessingP5
 ## This repository is all about learning how to setup and run Processing and p5.js projects in VSCode without using Processing's IDE.
-
-<br/>
-
-### I'm just way to used to my extentions is all :)
+### I'm just way to0 used to my extentions is all :)
 
 <br/>
 <br/>
