@@ -5,14 +5,14 @@
 <br/>
 <br/>
 
-# Steps to running p5 projects in VSCode
+## Steps to running p5 projects in VSCode
 - Open up the command palette and select `Create p5.js Project`.
 - Write your code in the `sketch.js` file generated.
 
 <br/>
 <br/>
 
-# Steps to running Processing projects in VSCode
+## Steps to running Processing projects in VSCode
 
 - First create a directory with `<dir_name>` as its name and `cd` into it.
 
@@ -30,7 +30,7 @@
 <br/>
 <br/>
 
-# Steps to running Processing projects in Python mode in VSCode
+## Steps to running Processing projects in Python mode in VSCode
 
 - First create a directory with `<dir_name>` as its name and `cd` into it.
 
