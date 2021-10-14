@@ -16,7 +16,6 @@ import java.io.IOException;
 
 public class AStarProcessing extends PApplet {
 
-
 // An educated guess of how far it is between two points
 public float heuristic(Spot a, Spot b) {
   float d = dist(a.i, a.j, b.i, b.j);

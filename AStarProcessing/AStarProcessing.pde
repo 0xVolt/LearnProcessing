@@ -1,4 +1,3 @@
-
 // An educated guess of how far it is between two points
 float heuristic(Spot a, Spot b) {
   float d = dist(a.i, a.j, b.i, b.j);
