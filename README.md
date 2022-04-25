@@ -1,6 +1,6 @@
 # Funny ways to use P5 & Processing
 ## This repository is all about learning how to setup and run Processing and p5.js projects in VSCode without using Processing's IDE.
-### I'm just way too used to my extentions is all :)
+### I'm just way too used to my extensions is all.
 
 ## Steps to running p5 projects in VSCode
 - Open up the command palette and select `Create p5.js Project`.
