@@ -1,4 +1,4 @@
-# Funny ways to use P5 & Processing
+# Funny ways to use Processing & p5js with the VSCode IDE
 ## This repository is all about learning how to setup and run Processing and p5.js projects in VSCode without using Processing's IDE.
 ### I'm just way too used to my extensions is all.
 
