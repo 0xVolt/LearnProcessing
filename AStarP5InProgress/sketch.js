@@ -7,7 +7,7 @@ function removeFromArray(arr, elt) {
 }
 
 function heuristic(a, b) {
-    // Calculate euclidian distance using p5
+    // Calculate euclidean distance using p5
     var d = dist(a.i, a.j, b.i, b.j);
     return d;
 }
@@ -64,7 +64,7 @@ var end;
 var path = [];
 
 function setup() {
-    console.log("Volt's demonstration of the A* pathfinding algorithm in p5.js");
+    console.log("Desh's demonstration of the A* path-finding algorithm in p5.js");
 
     createCanvas(600, 600);
 
@@ -165,7 +165,7 @@ function draw() {
 
                 // Calculate using heuristic function the best path
                 // Making an educated guess on how long it will take to get from neighbour to the end
-                // The heuristic we use will be the normal euclidian heuristic
+                // The heuristic we use will be the normal euclidean heuristic
                 neighbour.h = heuristic(neighbour, end);
 
                 // Calculate the score of the node using f(x) = g(x) + h(x)
@@ -178,6 +178,7 @@ function draw() {
 
     } else {
         // No solution
+        console.log("No solution!");
     }
 
     background(255);
