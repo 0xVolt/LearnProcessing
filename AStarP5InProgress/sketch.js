@@ -23,7 +23,7 @@ function Cell(i, j) {
     this.neighbors = [];
     this.previous = undefined;
 
-    this.addNeighbours = function(grid) {
+    this.addNeighbors = function(grid) {
         if (this.i < cols - 1) {
             this.neighbors.push(grid[this.i + 1][this.j]);
         }
@@ -83,7 +83,7 @@ function setup() {
 
     for (var i = 0; i < cols; i++) {
         for (var j = 0; j < rows; j++) {
-            grid[i][j].addNeighbours(grid);
+            grid[i][j].addNeighbors(grid);
         }
     }
 
@@ -145,34 +145,34 @@ function draw() {
         removeFromArray(openSet, current);
         closedSet.push(current);
 
-        var neighbours = current.neighbours;
-        for (var i = 0; i < neighbours.length; i++) {
-            var neighbour = neighbours[i];
+        var neighbors = current.neighbors;
+        for (var i = 0; i < neighbors.length; i++) {
+            var neighbor = neighbors[i];
 
-            if (!closedSet.includes(neighbour)) {
+            if (!closedSet.includes(neighbor)) {
                 // The amount of steps to get to a node is the number of steps it took to reach current + 1
                 var tempGScore = current.g + 1;
 
                 // Check if we reach the same G score by a more efficient path through another node in the openSet
-                if (openSet.includes(neighbour)) {
-                    if (tempGScore < neighbour.g) {
-                        neighbour.g = tempGScore;
+                if (openSet.includes(neighbor)) {
+                    if (tempGScore < neighbor.g) {
+                        neighbor.g = tempGScore;
                     }
                 } else {
-                    neighbour.g = tempGScore;
-                    openSet.push(neighbour);
+                    neighbor.g = tempGScore;
+                    openSet.push(neighbor);
                 }
 
                 // Calculate using heuristic function the best path
-                // Making an educated guess on how long it will take to get from neighbour to the end
+                // Making an educated guess on how long it will take to get from neighbor to the end
                 // The heuristic we use will be the normal euclidean heuristic
-                neighbour.h = heuristic(neighbour, end);
+                neighbor.h = heuristic(neighbor, end);
 
                 // Calculate the score of the node using f(x) = g(x) + h(x)
-                neighbour.f = neighbour.g + neighbour.h;
+                neighbor.f = neighbor.g + neighbor.h;
 
                 // Tracing back the optimal path
-                neighbour.previous = current;
+                neighbor.previous = current;
             }
         }
 
