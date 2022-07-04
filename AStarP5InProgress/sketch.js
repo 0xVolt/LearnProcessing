@@ -20,24 +20,24 @@ function Cell(i, j) {
     this.f = 0;
     this.g = 0;
     this.h = 0;
-    this.neighbours = [];
+    this.neighbors = [];
     this.previous = undefined;
 
     this.addNeighbours = function(grid) {
         if (this.i < cols - 1) {
-            this.neighbours.push(grid[this.i + 1][this.j]);
+            this.neighbors.push(grid[this.i + 1][this.j]);
         }
 
         if (this.i > 0) {
-            this.neighbours.push(grid[this.i - 1][this.j]);
+            this.neighbors.push(grid[this.i - 1][this.j]);
         }
 
         if (this.j < cols - 1) {
-            this.neighbours.push(grid[this.i][this.j + 1]);
+            this.neighbors.push(grid[this.i][this.j + 1]);
         }
 
         if (this.j > 0) {
-            this.neighbours.push(grid[this.i][this.j - 1]);
+            this.neighbors.push(grid[this.i][this.j - 1]);
         }
     }
 
@@ -141,7 +141,7 @@ function draw() {
             console.log("DONE!");
         }
 
-        // openSet.remove(current); doesnt actually exist. Making a new function to remove an element from the array instead
+        // openSet.remove(current); doesn't actually exist. Making a new function to remove an element from the array instead
         removeFromArray(openSet, current);
         closedSet.push(current);
 
